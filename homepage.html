@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CodTech - Online Learning Platform</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f4f8fb;
+      color: #222;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #151b29;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #00d1b2;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    .hero {
+      background: #00bcd4;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .hero button {
+      padding: 14px 28px;
+      background: white;
+      color: #00bcd4;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .hero button:hover {
+      background: #f0f0f0;
+    }
+
+    .section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .section h3 {
+      font-size: 28px;
+      margin-bottom: 15px;
+      color: #222;
+    }
+
+    .section p {
+      font-size: 18px;
+      max-width: 800px;
+      margin: 0 auto 20px;
+      line-height: 1.6;
+    }
+
+    .focus {
+      background: #eef7f5;
+    }
+
+    .instructions {
+      background: #fff3cd;
+      color: #856404;
+      padding: 40px 20px;
+      margin: 40px auto;
+      border-radius: 8px;
+      max-width: 900px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .instructions h4 {
+      font-size: 22px;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    footer {
+      background-color: #151b29;
+      color: #ccc;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: auto;
+    }
+
+    footer p, footer a {
+      font-size: 14px;
+      margin: 5px;
+      color: #00d1b2;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CodTech</h1>
+    <nav>
+      <a href="#" onclick="scrollToSection('about')">About</a>
+      <a href="#" onclick="scrollToSection('features')">Features</a>
+      <a href="#" onclick="scrollToSection('instructions')">Instructions</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>DEVELOP AN ONLINE LEARNING PLATFORM</h2>
+    <p>That supports <strong>Video Lessons</strong>, <strong>Quizzes</strong>, and <strong>Progress Tracking</strong>.</p>
+    <p><em>Completion certificate will be issued on your internship end date.</em></p>
+    <button onclick="scrollToSection('features')">Start Learning</button>
+  </section>
+
+  <section class="section focus" id="about">
+    <h3>Focus Areas</h3>
+    <p><strong>Media Streaming</strong> for seamless video lessons.</p>
+    <p><strong>User Authentication</strong> to manage student access.</p>
+    <p><strong>Data Storage</strong> to track progress and results.</p>
+    <p>A platform with a <strong>student-friendly UI</strong> and <strong>seamless video experience</strong>.</p>
+  </section>
+
+  <section class="section" id="features">
+    <h3>Platform Features</h3>
+    <p><strong>📹 Video Lessons:</strong> Watch high-quality lectures anytime.</p>
+    <p><strong>📝 Quizzes:</strong> Test your understanding after each module.</p>
+    <p><strong>📊 Progress Tracking:</strong> Track your learning journey and performance.</p>
+    <p><strong>🎓 Certification:</strong> Receive a certificate upon internship completion.</p>
+  </section>
+
+  <section class="instructions" id="instructions">
+    <h4>Instructions: Online Learning Platform</h4>
+    <p>⚙️ Build a fully functional platform with user login, video modules, and assessments.</p>
+    <p>🎯 Ensure a clean, intuitive design and smooth user experience.</p>
+    <p>📁 Save quiz data and progress securely.</p>
+    <p>📽️ Embed or stream video content clearly and responsively.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CodTech. All rights reserved.</p>
+    <p>Connect with us: 
+      <a href="#">LinkedIn</a> | 
+      <a href="#">GitHub</a>
+    </p>
+  </footer>
+
+  <script>
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
